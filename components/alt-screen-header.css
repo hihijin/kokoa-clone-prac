@@ -1,0 +1,15 @@
+.alt-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px 10px 40px 20px;
+}
+.alt-header__title{
+    font-size: 25px;
+}
+.alt-header__column span:last-child{
+    margin: 0 10px 0px 20px;
+}
+.alt-header__title__name{
+    padding-left: 60px;
+}

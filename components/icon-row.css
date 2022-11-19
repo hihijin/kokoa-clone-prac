@@ -1,0 +1,29 @@
+.icon-row__list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+.icon-row{
+    display: flex;
+    justify-content: space-between;
+    margin:0px 10px;
+}
+.icon-row__icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+.icon-row__icon i{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.set2{
+    margin-top: 30px;   
+}
+.set2__openchat{
+    position: absolute;
+    left:29%;
+}
