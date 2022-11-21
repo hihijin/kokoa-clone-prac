@@ -1,5 +1,5 @@
 #chat-screen{
-    background-color: #abc1d1;
+    background-color: rgb(241,195,206,0.5);
     height: 500vh;
 }
 #chat-screen .status-bar,
@@ -8,7 +8,7 @@
     position: fixed;
     width:100%;
     box-sizing: border-box;
-    background-color: #abc1d1;
+    background-color: rgb(241,195,206,0.5);
 }
 .main-chat{
     display: flex;
@@ -63,7 +63,7 @@
     display:block;
 }
 .message__bubble{
-    background-color: white;
+    background-color: rgb(248,248,248,0.7);
     padding: 13px;
     border-radius: 15px;
     border-top-left-radius: 0px;
@@ -92,10 +92,10 @@
     opacity: 0;
     justify-content: flex-end;
     animation: fadeRight 0.5s linear forwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.7s;
 }
 .message-row--own .message__bubble{
-    background-color: var(--yellow);
+    background-color: rgb(241,195,206,0.5);
     border-top-right-radius: 0px;
     border-top-left-radius: 15px;
     margin-right: 0;
@@ -112,7 +112,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: rgb(241,195,206,0.01);
     padding: 5px 25px;
     color:rgba(0,0,0,0.4);
 }
@@ -128,8 +128,8 @@
     padding:10px;
     box-sizing: border-box;
     border-radius: 20px;
-    border:1px solid rgba(0,0,0,0.2);
-    background-color: rgba(0,0,0,0.03);
+    border:3px solid rgb(241,195,206,1);
+    background-color: rgba(0,0,0,0.0001);
     transition:all 0.3s ease-in-out;
 }
 .reply__column{
@@ -139,15 +139,15 @@
 .reply__column:last-child > i,
 .reply__column:last-child button{
     position: absolute;
-    right: 3px;
-    bottom:3px;
+    right: 4px;
+    bottom:5px;
 }
 .reply__column:last-child > i{
     right:45px;
-    bottom: 17px;
+    bottom: 19px;
 }
 .reply__column:last-child button{
-    background-color: var(--yellow);
+    background-color: rgb(241,195,206,1);
     border: none;
     width:30px;
     height: 30px;
@@ -172,4 +172,18 @@
 .reply:focus-within input{
     width:98vw;
     transform: translate(-13%);
+}
+.message-row--own__btn{
+    width:100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(241,195,206,0.01);
+    border:none;
+    font-size: 25px;
+    color:#2e363e;
+    padding:10px 0 0 10px;
+    text-decoration: underline;
+}
+.message__bubble a{
+    text-decoration: underline;
 }

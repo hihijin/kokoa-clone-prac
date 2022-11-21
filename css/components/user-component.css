@@ -1,6 +1,6 @@
 .user-component{
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 .user-component,
 .user-component__column{
@@ -18,7 +18,7 @@
 }
 .user-component__subtitle{
     margin: 8px 0px 0px 15px;
-    font-size: 14px;
+    font-size: 13px;
     color:rgba(0,0,0,0.5);
 }
 .user-component__avatar--xl{
@@ -59,4 +59,60 @@
     position: relative;
     bottom:-3px;
     padding-left: 3px;
+}
+.user-component__column:first-child{
+    margin-bottom: -20px;
+}
+.user-component__winter-img{
+    margin-top: 20px;
+    margin-left: 30px;
+    width:400px;
+    height:350px;
+    border-radius: 5px;
+    animation: winterAnimation 1s ease-in-out forwards;
+}
+.user-component__winter-img1{
+    margin-top: 20px;
+    width:450px;
+    height:250px;
+    border-radius: 5px;
+    animation: winterAnimation 1s ease-in-out forwards;
+}
+.user-component__winter-btn{
+    display: flex;
+    justify-content: center;
+}
+.user-component__winter-btn span{
+    font-size: 12px;
+    color: rgba(0,0,0,0.4);
+    margin-top: 7px;
+}
+.user-component__winter-btn button{
+    margin-left: 10px;
+    background-color: rgba(0,0,0,0.01);
+    font-weight: bold;
+    width:30px;
+    height: 30px;
+    border-radius: 5px;
+}
+@keyframes winterAnimation{
+    from{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.user-component__sticker-box{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.user-component__sticker{
+    width:150px;
+    height:150px;
+    opacity: 0.9;
+    border: none;
 }

@@ -8,22 +8,24 @@
 .icon-row{
     display: flex;
     justify-content: space-between;
-    margin:0px 10px;
+    margin:20px 10px;
 }
-.icon-row__icon{
+.icon-row__icon,
+.icon-row__icon a{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 15px;
+    width:100px;
 }
-.icon-row__icon i{
+.icon-row__icon img{
     font-size: 30px;
-    margin-bottom: 15px;
-}
-.set2{
-    margin-top: 30px;   
+    margin-bottom: 10px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
 }
 .set2__openchat{
     position: absolute;
-    left:29%;
+    left:27%;
 }

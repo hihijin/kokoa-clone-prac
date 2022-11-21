@@ -19,11 +19,13 @@
 @import "screens/chat.css";
 
 body{
+    overflow:hidden;
     font-family: 'Nanum Myeongjo', serif;
     font-weight: bold;
     height: 1000vh;
     color:#2e363e;
 }
+
 .main-screen{
     padding:0px var(--horizontal-space);
 }

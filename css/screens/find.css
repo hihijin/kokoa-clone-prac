@@ -4,6 +4,15 @@
     padding: 20px 0px;
     margin: 20px 0px;
     color:var(--main-color);
+    position: relative;
+}
+.recommended-friends img{
+    opacity: 0.3;
+    position: absolute;
+    bottom:-5px;
+    left:-30px;
+    width:500px;
+    height:250px;
 }
 .recommended-friends div{
     text-align: center;
@@ -14,8 +23,8 @@
     justify-content: space-between;
     color:var(--main-color);
 }
-.open-chat__header span{
-    font-size: 14px;
+.open-chat__header a{
+    font-size: 13px;
     opacity: 0.6;
 }
 .open-post{
@@ -58,11 +67,12 @@
     margin: 0px 5px;
 }
 .open-post__photo img{
-    width:80px;
+    width:120px;
     height: 80px;
     border-radius: 10px;
 }
-.open-post__photo{
+.open-post__photo,
+.open-post__photo a{
     position: relative;
 }
 .open-post__heart-count{
